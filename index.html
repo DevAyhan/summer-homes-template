@@ -100,32 +100,78 @@
   .nav-links a:hover { color: var(--gold); }
   .nav-links a:hover::after { width: 100%; }
 
-  /* LANG SWITCHER */
+  /* LANG SWITCHER (DROPDOWN) */
   .lang-switch {
-    display: flex;
-    gap: 2px;
+    position: relative;
     margin-left: 28px;
-    border: 1px solid rgba(201, 168, 76, 0.4);
   }
-  .lang-switch button {
+  .lang-current {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     background: transparent;
-    border: none;
+    border: 1px solid rgba(201, 168, 76, 0.4);
     color: var(--white);
     font-family: inherit;
     font-size: 0.72rem;
     letter-spacing: 1.5px;
-    padding: 6px 12px;
+    text-transform: uppercase;
+    padding: 7px 14px;
     cursor: pointer;
     transition: all 0.3s;
     font-weight: 500;
   }
-  .lang-switch button.active {
-    background: var(--gold);
-    color: var(--navy);
+  .lang-current:hover { border-color: var(--gold); color: var(--gold); }
+  .lang-current .chev {
+    font-size: 0.6rem;
+    transition: transform 0.3s;
+    opacity: 0.8;
   }
-  .lang-switch button:hover:not(.active) { color: var(--gold); }
+  .lang-switch.open .lang-current .chev { transform: rotate(180deg); }
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 160px;
+    background: var(--navy-dark);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+    z-index: 110;
+  }
+  .lang-switch.open .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .lang-menu button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-family: inherit;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+    padding: 12px 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+  }
+  .lang-menu button:hover { background: rgba(201, 168, 76, 0.1); color: var(--gold); }
+  .lang-menu button.active { color: var(--gold); }
+  .lang-menu button.active::after {
+    content: '✓';
+    font-size: 0.8rem;
+  }
   @media (max-width: 900px) {
     .lang-switch { margin-left: 0; }
+    .lang-menu { right: auto; left: 0; }
   }
 
   /* HERO */
@@ -621,10 +667,16 @@
       <li><a href="#contact" data-i18n="ui.nav.contact">Contact</a></li>
     </ul>
     <div class="lang-switch" id="langSwitch">
-      <button type="button" data-lang="en">EN</button>
-      <button type="button" data-lang="tr">TR</button>
-      <button type="button" data-lang="de">DE</button>
-      <button type="button" data-lang="ru">RU</button>
+      <button type="button" class="lang-current" id="langCurrent" aria-haspopup="listbox" aria-expanded="false">
+        <span id="langCurrentLabel">EN</span>
+        <span class="chev">▾</span>
+      </button>
+      <div class="lang-menu" id="langMenu" role="listbox">
+        <button type="button" data-lang="en">English</button>
+        <button type="button" data-lang="tr">Türkçe</button>
+        <button type="button" data-lang="de">Deutsch</button>
+        <button type="button" data-lang="ru">Русский</button>
+      </div>
     </div>
   </div>
 </nav>
@@ -885,7 +937,10 @@
     const wa = document.getElementById('whatsappBtn');
     wa.href = `https://wa.me/${data.contact.whatsapp}?text=${msg}`;
 
-    document.querySelectorAll('#langSwitch button').forEach(b => {
+    const LANG_LABELS = { en: 'EN', tr: 'TR', de: 'DE', ru: 'RU' };
+    document.getElementById('langCurrentLabel').textContent = LANG_LABELS[state.lang] || state.lang.toUpperCase();
+
+    document.querySelectorAll('#langMenu button').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === state.lang);
     });
   }
@@ -903,10 +958,37 @@
     applyTranslations();
   }
 
-  document.getElementById('langSwitch').addEventListener('click', (e) => {
-    const btn = e.target.closest('button[data-lang]');
-    if (btn) setLang(btn.dataset.lang);
-  });
+  // Lang dropdown open/close + selection
+  (function setupLangDropdown() {
+    const switchEl = document.getElementById('langSwitch');
+    const trigger = document.getElementById('langCurrent');
+    const menu = document.getElementById('langMenu');
+
+    function setOpen(open) {
+      switchEl.classList.toggle('open', open);
+      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setOpen(!switchEl.classList.contains('open'));
+    });
+
+    menu.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-lang]');
+      if (!btn) return;
+      setLang(btn.dataset.lang);
+      setOpen(false);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!switchEl.contains(e.target)) setOpen(false);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  })();
 
   function setupGallery() {
     const lightbox = document.getElementById('lightbox');

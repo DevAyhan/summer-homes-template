@@ -257,6 +257,12 @@
       "tr": "Teşekkürler. Mesajınız iletildi — en kısa sürede sizinle iletişime geçeceğiz.",
       "de": "Vielen Dank. Ihre Nachricht wurde gesendet — wir werden uns in Kürze bei Ihnen melden.",
       "ru": "Спасибо. Ваше сообщение отправлено — мы свяжемся с вами в ближайшее время."
+    },
+    "formBackButton": {
+      "en": "Back to Page",
+      "tr": "Sayfaya Dön",
+      "de": "Zurück zur Seite",
+      "ru": "Вернуться на страницу"
     }
   }
 }

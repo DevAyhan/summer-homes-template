@@ -568,12 +568,31 @@
   }
   .form-success {
     display: none;
-    padding: 16px;
+    padding: 18px 20px;
     background: #e8f5e9;
     color: #2e7d32;
     margin-bottom: 20px;
     border-left: 3px solid #2e7d32;
     font-size: 0.9rem;
+  }
+  .form-success-text { margin: 0 0 14px; }
+  .form-success-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: transparent;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+    font-family: inherit;
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .form-success-btn:hover {
+    background: #2e7d32;
+    color: #fff;
   }
 
   /* FOOTER */
@@ -823,7 +842,10 @@
         <input type="hidden" name="form-name" value="contact">
         <input type="hidden" name="project" id="formProject" value="">
         <p style="display:none"><label>Don't fill: <input name="bot-field"></label></p>
-        <div class="form-success" id="formSuccess" data-i18n="ui.formSuccess">Thank you. Your message has been sent — we will contact you shortly.</div>
+        <div class="form-success" id="formSuccess">
+          <p class="form-success-text" data-i18n="ui.formSuccess">Thank you. Your message has been sent — we will contact you shortly.</p>
+          <button type="button" class="form-success-btn" id="formSuccessBtn" data-i18n="ui.formBackButton">Back to Page</button>
+        </div>
         <div class="form-group">
           <label for="name" data-i18n="ui.formName">Full Name</label>
           <input type="text" id="name" name="name" required>
@@ -1151,15 +1173,41 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  document.getElementById('formSuccessBtn').addEventListener('click', () => {
+    document.getElementById('formSuccess').style.display = 'none';
+  });
+
+  document.querySelector('.contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = this;
+    const successEl = document.getElementById('formSuccess');
+
+    const showSuccess = () => {
+      successEl.style.display = 'block';
+      form.reset();
+      successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    };
+
     const isLocal = window.location.hostname === 'localhost' ||
                     window.location.hostname === '127.0.0.1' ||
                     window.location.protocol === 'file:';
     if (isLocal) {
-      e.preventDefault();
-      document.getElementById('formSuccess').style.display = 'block';
-      this.reset();
-      document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      showSuccess();
+      return;
+    }
+
+    try {
+      const body = new URLSearchParams(new FormData(form)).toString();
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body
+      });
+      if (!res.ok) throw new Error('submit failed');
+      showSuccess();
+    } catch (err) {
+      console.error('Form submit error:', err);
+      alert('Submission failed. Please try again.');
     }
   });
 

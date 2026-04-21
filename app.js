@@ -217,6 +217,17 @@ function render(data) {
   if (!data) return;
   renderStructure(data);
   applyTranslations();
+  scrollToHashAfterRender();
+}
+
+function scrollToHashAfterRender() {
+  const hash = window.location.hash;
+  if (!hash || hash === '#') return;
+  const target = document.querySelector(hash);
+  if (!target) return;
+  requestAnimationFrame(() => {
+    target.scrollIntoView({ behavior: 'auto', block: 'start' });
+  });
 }
 
 function setLang(lang) {

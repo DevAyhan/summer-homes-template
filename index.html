@@ -366,9 +366,15 @@
 
   .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 24px;
     margin-bottom: 64px;
+  }
+  @media (max-width: 900px) {
+    .features-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 540px) {
+    .features-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   .feature-card {
     text-align: center;
@@ -393,26 +399,36 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 500;
+    white-space: nowrap;
   }
   .feature-value {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-weight: 500;
+    white-space: nowrap;
   }
 
   .highlights-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 14px;
     max-width: 960px;
     margin: 0 auto;
     list-style: none;
+  }
+  @media (max-width: 900px) {
+    .highlights-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 540px) {
+    .highlights-list { grid-template-columns: 1fr; }
   }
   .highlights-list li {
     padding: 16px 20px;
     border-left: 2px solid var(--gold);
     font-size: 0.95rem;
     background: rgba(255,255,255,0.02);
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   /* GALLERY */
@@ -672,9 +688,7 @@
   }
   @media (max-width: 540px) {
     .gallery-grid { grid-template-columns: 1fr; }
-    .features-grid { grid-template-columns: repeat(2, 1fr); }
     .logo { font-size: 1.05rem; letter-spacing: 2.5px; }
-    .highlights-list { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -1018,7 +1032,33 @@
     document.querySelectorAll('#langMenu button').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === state.lang);
     });
+
+    // After translations are applied, shrink any single-line text that overflows its container.
+    requestAnimationFrame(fitOverflowingText);
   }
+
+  // Scale font-size down until element fits its parent width (or hits min size).
+  function fitText(el, minPx = 9) {
+    el.style.fontSize = '';
+    const parent = el.parentElement;
+    if (!parent) return;
+    const maxWidth = parent.clientWidth - (parseFloat(getComputedStyle(parent).paddingLeft) + parseFloat(getComputedStyle(parent).paddingRight));
+    let size = parseFloat(getComputedStyle(el).fontSize);
+    let guard = 40;
+    while (el.scrollWidth > maxWidth && size > minPx && guard-- > 0) {
+      size -= 0.5;
+      el.style.fontSize = `${size}px`;
+    }
+  }
+
+  function fitOverflowingText() {
+    document.querySelectorAll('.feature-label, .feature-value, .highlights-list li').forEach(el => fitText(el));
+  }
+
+  window.addEventListener('resize', () => {
+    clearTimeout(window._fitTO);
+    window._fitTO = setTimeout(fitOverflowingText, 150);
+  });
 
   function render(data) {
     if (!data) return;

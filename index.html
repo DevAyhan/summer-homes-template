@@ -797,10 +797,52 @@
     return val;
   }
 
-  function render(data) {
-    if (!data) return;
+  // One-time DOM build: creates elements whose structure doesn't depend on language.
+  function renderStructure(data) {
     state.data = data;
     state.gallery = data.gallery || [];
+
+    document.getElementById('heroBg').style.backgroundImage = `url('${data.project.heroImage}')`;
+    document.getElementById('heroCta').href = data.project.cta.link;
+
+    document.getElementById('featuresGrid').innerHTML = data.features.map((f, i) => `
+      <div class="feature-card" data-feature="${i}">
+        <div class="feature-icon">${f.icon}</div>
+        <div class="feature-label"></div>
+        <div class="feature-value"></div>
+      </div>
+    `).join('');
+
+    document.getElementById('highlightsList').innerHTML =
+      data.highlights.map((_, i) => `<li data-highlight="${i}">✦ &nbsp; </li>`).join('');
+
+    document.getElementById('galleryGrid').innerHTML = state.gallery.map((g, i) => `
+      <div class="gallery-item" data-index="${i}">
+        <img src="${g.src}" alt="" loading="lazy">
+      </div>
+    `).join('');
+
+    const { lat, lng, zoom } = data.location;
+    document.getElementById('mapFrame').src =
+      `https://maps.google.com/maps?q=${lat},${lng}&z=${zoom || 14}&output=embed`;
+
+    const phone = document.getElementById('phoneLink');
+    phone.href = `tel:${data.contact.phone.replace(/\s/g, '')}`;
+    phone.textContent = data.contact.phone;
+
+    const email = document.getElementById('emailLink');
+    email.href = `mailto:${data.contact.email}`;
+    email.textContent = data.contact.email;
+
+    document.getElementById('whatsappBtn').href = `https://wa.me/${data.contact.whatsapp}`;
+
+    setupGallery();
+  }
+
+  // Applies localized text to existing elements. Never touches <img> src.
+  function applyTranslations() {
+    const data = state.data;
+    if (!data) return;
 
     document.documentElement.lang = state.lang;
 
@@ -821,56 +863,44 @@
 
     const projectName = t(data.project.name);
     document.title = `${projectName} — ${data.brand.name}`;
-    document.getElementById('heroBg').style.backgroundImage = `url('${data.project.heroImage}')`;
     document.getElementById('heroCta').textContent = t(data.project.cta.text);
-    document.getElementById('heroCta').href = data.project.cta.link;
     document.getElementById('formProject').value = projectName;
 
-    document.getElementById('featuresGrid').innerHTML = data.features.map(f => `
-      <div class="feature-card">
-        <div class="feature-icon">${f.icon}</div>
-        <div class="feature-label">${t(f.label)}</div>
-        <div class="feature-value">${t(f.value)}</div>
-      </div>
-    `).join('');
+    document.querySelectorAll('.feature-card[data-feature]').forEach(card => {
+      const f = data.features[+card.dataset.feature];
+      card.querySelector('.feature-label').textContent = t(f.label);
+      card.querySelector('.feature-value').textContent = t(f.value);
+    });
 
-    document.getElementById('highlightsList').innerHTML =
-      data.highlights.map(h => `<li>✦ &nbsp; ${t(h)}</li>`).join('');
+    document.querySelectorAll('#highlightsList li[data-highlight]').forEach(li => {
+      const h = data.highlights[+li.dataset.highlight];
+      li.innerHTML = `✦ &nbsp; ${t(h)}`;
+    });
 
-    document.getElementById('galleryGrid').innerHTML = state.gallery.map((g, i) => `
-      <div class="gallery-item" data-index="${i}">
-        <img src="${g.src}" alt="${t(g.alt) || ''}" loading="lazy">
-      </div>
-    `).join('');
-
-    const { lat, lng, zoom } = data.location;
-    const mapUrl = `https://maps.google.com/maps?q=${lat},${lng}&z=${zoom || 14}&output=embed`;
-    document.getElementById('mapFrame').src = mapUrl;
-
-    const phone = document.getElementById('phoneLink');
-    phone.href = `tel:${data.contact.phone.replace(/\s/g, '')}`;
-    phone.textContent = data.contact.phone;
-
-    const email = document.getElementById('emailLink');
-    email.href = `mailto:${data.contact.email}`;
-    email.textContent = data.contact.email;
+    document.querySelectorAll('#galleryGrid .gallery-item img').forEach((img, i) => {
+      img.alt = t(state.gallery[i].alt) || '';
+    });
 
     const msg = encodeURIComponent(t(data.contact.whatsappMessage) || '');
-    document.getElementById('whatsappBtn').href =
-      `https://wa.me/${data.contact.whatsapp}?text=${msg}`;
+    const wa = document.getElementById('whatsappBtn');
+    wa.href = `https://wa.me/${data.contact.whatsapp}?text=${msg}`;
 
     document.querySelectorAll('#langSwitch button').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === state.lang);
     });
+  }
 
-    setupGallery();
+  function render(data) {
+    if (!data) return;
+    renderStructure(data);
+    applyTranslations();
   }
 
   function setLang(lang) {
     if (!SUPPORTED_LANGS.includes(lang) || lang === state.lang) return;
     state.lang = lang;
     localStorage.setItem('lang', lang);
-    if (state.data) render(state.data);
+    applyTranslations();
   }
 
   document.getElementById('langSwitch').addEventListener('click', (e) => {

@@ -4,68 +4,84 @@
     "logo": "SUMMER HOMES",
     "tagline": {
       "en": "A New Address for Luxury Living",
-      "tr": "Lüks Yaşamın Yeni Adresi"
+      "tr": "Lüks Yaşamın Yeni Adresi",
+      "de": "Die neue Adresse für luxuriöses Wohnen",
+      "ru": "Новый адрес роскошной жизни"
     }
   },
   "project": {
     "name": {
       "en": "Bodrum Seaside Residence",
-      "tr": "Bodrum Sahil Rezidansı"
+      "tr": "Bodrum Sahil Rezidansı",
+      "de": "Bodrum Seaside Residence",
+      "ru": "Резиденция Bodrum Seaside"
     },
     "subtitle": {
       "en": "Exclusive Sea View Villas",
-      "tr": "Özel Deniz Manzaralı Villalar"
+      "tr": "Özel Deniz Manzaralı Villalar",
+      "de": "Exklusive Villen mit Meerblick",
+      "ru": "Эксклюзивные виллы с видом на море"
     },
     "location": {
       "en": "Yalıkavak, Bodrum",
-      "tr": "Yalıkavak, Bodrum"
+      "tr": "Yalıkavak, Bodrum",
+      "de": "Yalıkavak, Bodrum",
+      "ru": "Ялыкавак, Бодрум"
     },
     "price": "€ 1.250.000",
     "priceSuffix": {
       "en": "starting from",
-      "tr": "başlangıç fiyatı"
+      "tr": "başlangıç fiyatı",
+      "de": "ab",
+      "ru": "от"
     },
     "description": {
       "en": "An exceptional living experience where modern architecture meets the Mediterranean spirit, nestled in the heart of the Aegean. Hand-picked for discerning international buyers seeking a true sanctuary by the sea.",
-      "tr": "Ege'nin kalbinde, modern mimarinin Akdeniz ruhuyla buluştuğu eşsiz bir yaşam deneyimi. Deniz kenarında gerçek bir sığınak arayan seçkin uluslararası alıcılar için özenle seçilmiştir."
+      "tr": "Ege'nin kalbinde, modern mimarinin Akdeniz ruhuyla buluştuğu eşsiz bir yaşam deneyimi. Deniz kenarında gerçek bir sığınak arayan seçkin uluslararası alıcılar için özenle seçilmiştir.",
+      "de": "Ein außergewöhnliches Wohnerlebnis, bei dem moderne Architektur auf den mediterranen Geist trifft — eingebettet im Herzen der Ägäis. Handverlesen für anspruchsvolle internationale Käufer auf der Suche nach einer echten Oase am Meer.",
+      "ru": "Исключительный опыт проживания, где современная архитектура встречается со средиземноморским духом, в самом сердце Эгейского моря. Тщательно подобрано для взыскательных международных покупателей, ищущих истинное убежище у моря."
     },
     "heroImage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
     "cta": {
       "text": {
         "en": "Request Information",
-        "tr": "Bilgi Al"
+        "tr": "Bilgi Al",
+        "de": "Informationen anfordern",
+        "ru": "Запросить информацию"
       },
       "link": "#contact"
     }
   },
   "features": [
-    { "icon": "📐", "label": { "en": "Living Area", "tr": "Yaşam Alanı" }, "value": { "en": "320 m²", "tr": "320 m²" } },
-    { "icon": "🛏️", "label": { "en": "Bedrooms", "tr": "Yatak Odası" }, "value": { "en": "4 + 1", "tr": "4 + 1" } },
-    { "icon": "🛁", "label": { "en": "Bathrooms", "tr": "Banyo" }, "value": { "en": "3", "tr": "3" } },
-    { "icon": "🏊", "label": { "en": "Private Pool", "tr": "Özel Havuz" }, "value": { "en": "Yes", "tr": "Var" } },
-    { "icon": "🌊", "label": { "en": "Sea View", "tr": "Deniz Manzarası" }, "value": { "en": "Full Front", "tr": "Cepheden" } },
-    { "icon": "📍", "label": { "en": "Location", "tr": "Konum" }, "value": { "en": "Yalıkavak", "tr": "Yalıkavak" } }
+    { "icon": "📐", "label": { "en": "Living Area", "tr": "Yaşam Alanı", "de": "Wohnfläche", "ru": "Жилая площадь" }, "value": { "en": "320 m²", "tr": "320 m²", "de": "320 m²", "ru": "320 м²" } },
+    { "icon": "🛏️", "label": { "en": "Bedrooms", "tr": "Yatak Odası", "de": "Schlafzimmer", "ru": "Спальни" }, "value": { "en": "4 + 1", "tr": "4 + 1", "de": "4 + 1", "ru": "4 + 1" } },
+    { "icon": "🛁", "label": { "en": "Bathrooms", "tr": "Banyo", "de": "Badezimmer", "ru": "Ванные" }, "value": { "en": "3", "tr": "3", "de": "3", "ru": "3" } },
+    { "icon": "🏊", "label": { "en": "Private Pool", "tr": "Özel Havuz", "de": "Privatpool", "ru": "Частный бассейн" }, "value": { "en": "Yes", "tr": "Var", "de": "Ja", "ru": "Есть" } },
+    { "icon": "🌊", "label": { "en": "Sea View", "tr": "Deniz Manzarası", "de": "Meerblick", "ru": "Вид на море" }, "value": { "en": "Full Front", "tr": "Cepheden", "de": "Frontal", "ru": "Фронтальный" } },
+    { "icon": "📍", "label": { "en": "Location", "tr": "Konum", "de": "Lage", "ru": "Местоположение" }, "value": { "en": "Yalıkavak", "tr": "Yalıkavak", "de": "Yalıkavak", "ru": "Ялыкавак" } }
   ],
   "highlights": [
-    { "en": "Smart home automation", "tr": "Akıllı ev otomasyonu" },
-    { "en": "24/7 private security", "tr": "7/24 özel güvenlik" },
-    { "en": "Direct beach access", "tr": "Plaja doğrudan erişim" },
-    { "en": "Spa & wellness center", "tr": "Spa ve wellness merkezi" },
-    { "en": "Concierge service", "tr": "Konsiyerj hizmeti" },
-    { "en": "Private jetty", "tr": "Özel iskele" }
+    { "en": "Smart home automation", "tr": "Akıllı ev otomasyonu", "de": "Smart-Home-Automatisierung", "ru": "Умный дом" },
+    { "en": "24/7 private security", "tr": "7/24 özel güvenlik", "de": "24/7 private Sicherheit", "ru": "Частная охрана 24/7" },
+    { "en": "Direct beach access", "tr": "Plaja doğrudan erişim", "de": "Direkter Strandzugang", "ru": "Прямой выход к пляжу" },
+    { "en": "Spa & wellness center", "tr": "Spa ve wellness merkezi", "de": "Spa- und Wellnessbereich", "ru": "Спа и велнес-центр" },
+    { "en": "Concierge service", "tr": "Konsiyerj hizmeti", "de": "Concierge-Service", "ru": "Консьерж-сервис" },
+    { "en": "Private jetty", "tr": "Özel iskele", "de": "Privater Bootssteg", "ru": "Частный причал" }
   ],
   "gallery": [
-    { "src": "images/photo1.jpg", "alt": { "en": "Exterior view", "tr": "Dış görünüm" } },
-    { "src": "images/photo2.jpg", "alt": { "en": "Living room", "tr": "Oturma odası" } },
-    { "src": "images/photo3.jpg", "alt": { "en": "Master bedroom", "tr": "Ebeveyn yatak odası" } },
-    { "src": "images/photo4.jpg", "alt": { "en": "Infinity pool", "tr": "Sonsuzluk havuzu" } },
-    { "src": "images/photo5.jpg", "alt": { "en": "Kitchen", "tr": "Mutfak" } },
-    { "src": "images/photo6.jpg", "alt": { "en": "Terrace sea view", "tr": "Teras deniz manzarası" } }
+    { "src": "images/photo1.jpg", "alt": { "en": "Exterior view", "tr": "Dış görünüm", "de": "Außenansicht", "ru": "Внешний вид" } },
+    { "src": "images/photo2.jpg", "alt": { "en": "Living room", "tr": "Oturma odası", "de": "Wohnzimmer", "ru": "Гостиная" } },
+    { "src": "images/photo3.jpg", "alt": { "en": "Master bedroom", "tr": "Ebeveyn yatak odası", "de": "Hauptschlafzimmer", "ru": "Главная спальня" } },
+    { "src": "images/photo4.jpg", "alt": { "en": "Infinity pool", "tr": "Sonsuzluk havuzu", "de": "Infinity-Pool", "ru": "Бассейн-инфинити" } },
+    { "src": "images/photo5.jpg", "alt": { "en": "Kitchen", "tr": "Mutfak", "de": "Küche", "ru": "Кухня" } },
+    { "src": "images/photo6.jpg", "alt": { "en": "Terrace sea view", "tr": "Teras deniz manzarası", "de": "Terrasse mit Meerblick", "ru": "Терраса с видом на море" } }
   ],
   "location": {
     "address": {
       "en": "Yalıkavak Marina, Bodrum, Muğla, Türkiye",
-      "tr": "Yalıkavak Marina, Bodrum, Muğla, Türkiye"
+      "tr": "Yalıkavak Marina, Bodrum, Muğla, Türkiye",
+      "de": "Yalıkavak Marina, Bodrum, Muğla, Türkei",
+      "ru": "Яхт-клуб Ялыкавак, Бодрум, Мугла, Турция"
     },
     "lat": 37.096061,
     "lng": 27.268855,
@@ -76,67 +92,85 @@
     "whatsapp": "905340309029",
     "whatsappMessage": {
       "en": "Hello, I'm interested in the Bodrum Seaside Residence project.",
-      "tr": "Merhaba, Bodrum Sahil Rezidansı projesi ile ilgileniyorum."
+      "tr": "Merhaba, Bodrum Sahil Rezidansı projesi ile ilgileniyorum.",
+      "de": "Hallo, ich interessiere mich für das Projekt Bodrum Seaside Residence.",
+      "ru": "Здравствуйте, меня интересует проект Bodrum Seaside Residence."
     },
     "email": "info@summerhomes.com",
     "office": {
       "en": "Yalıkavak Marina, Bodrum",
-      "tr": "Yalıkavak Marina, Bodrum"
+      "tr": "Yalıkavak Marina, Bodrum",
+      "de": "Yalıkavak Marina, Bodrum",
+      "ru": "Яхт-клуб Ялыкавак, Бодрум"
     }
   },
   "footer": {
     "copyright": {
       "en": "Summer Homes. All rights reserved.",
-      "tr": "Summer Homes. Tüm hakları saklıdır."
+      "tr": "Summer Homes. Tüm hakları saklıdır.",
+      "de": "Summer Homes. Alle Rechte vorbehalten.",
+      "ru": "Summer Homes. Все права защищены."
     },
     "disclaimer": {
       "en": "The information on this page is for presentation purposes. Final specifications may vary.",
-      "tr": "Bu sayfadaki bilgiler tanıtım amaçlıdır. Nihai özellikler değişiklik gösterebilir."
+      "tr": "Bu sayfadaki bilgiler tanıtım amaçlıdır. Nihai özellikler değişiklik gösterebilir.",
+      "de": "Die Informationen auf dieser Seite dienen zu Präsentationszwecken. Die endgültigen Spezifikationen können abweichen.",
+      "ru": "Информация на этой странице носит презентационный характер. Окончательные характеристики могут отличаться."
     }
   },
   "ui": {
     "nav": {
-      "project": { "en": "Project", "tr": "Proje" },
-      "features": { "en": "Features", "tr": "Özellikler" },
-      "gallery": { "en": "Gallery", "tr": "Galeri" },
-      "location": { "en": "Location", "tr": "Konum" },
-      "contact": { "en": "Contact", "tr": "İletişim" }
+      "project": { "en": "Project", "tr": "Proje", "de": "Projekt", "ru": "Проект" },
+      "features": { "en": "Features", "tr": "Özellikler", "de": "Ausstattung", "ru": "Особенности" },
+      "gallery": { "en": "Gallery", "tr": "Galeri", "de": "Galerie", "ru": "Галерея" },
+      "location": { "en": "Location", "tr": "Konum", "de": "Lage", "ru": "Расположение" },
+      "contact": { "en": "Contact", "tr": "İletişim", "de": "Kontakt", "ru": "Контакты" }
     },
-    "scrollHint": { "en": "Scroll", "tr": "Kaydır" },
-    "aboutEyebrow": { "en": "The Project", "tr": "Proje" },
-    "featuresEyebrow": { "en": "Features", "tr": "Özellikler" },
-    "featuresTitle": { "en": "Exceptional Living", "tr": "Ayrıcalıklı Yaşam" },
+    "scrollHint": { "en": "Scroll", "tr": "Kaydır", "de": "Scrollen", "ru": "Прокрутить" },
+    "aboutEyebrow": { "en": "The Project", "tr": "Proje", "de": "Das Projekt", "ru": "Проект" },
+    "featuresEyebrow": { "en": "Features", "tr": "Özellikler", "de": "Ausstattung", "ru": "Особенности" },
+    "featuresTitle": { "en": "Exceptional Living", "tr": "Ayrıcalıklı Yaşam", "de": "Außergewöhnliches Wohnen", "ru": "Исключительная жизнь" },
     "featuresDesc": {
       "en": "Every detail thoughtfully considered, a living space of uncompromising quality.",
-      "tr": "Her detay özenle düşünülmüş, tavizsiz kalitede bir yaşam alanı."
+      "tr": "Her detay özenle düşünülmüş, tavizsiz kalitede bir yaşam alanı.",
+      "de": "Jedes Detail durchdacht — ein Wohnraum von kompromissloser Qualität.",
+      "ru": "Каждая деталь продумана до мелочей — жилое пространство бескомпромиссного качества."
     },
-    "galleryEyebrow": { "en": "Gallery", "tr": "Galeri" },
-    "galleryTitle": { "en": "Visuals", "tr": "Görseller" },
+    "galleryEyebrow": { "en": "Gallery", "tr": "Galeri", "de": "Galerie", "ru": "Галерея" },
+    "galleryTitle": { "en": "Visuals", "tr": "Görseller", "de": "Bilder", "ru": "Изображения" },
     "galleryDesc": {
       "en": "Discover the unique atmosphere of the project.",
-      "tr": "Projenin eşsiz atmosferini keşfedin."
+      "tr": "Projenin eşsiz atmosferini keşfedin.",
+      "de": "Entdecken Sie die einzigartige Atmosphäre des Projekts.",
+      "ru": "Откройте для себя уникальную атмосферу проекта."
     },
-    "locationEyebrow": { "en": "Location", "tr": "Konum" },
-    "locationTitle": { "en": "Where?", "tr": "Nerede?" },
-    "contactEyebrow": { "en": "Contact", "tr": "İletişim" },
-    "contactTitle": { "en": "Get in Touch", "tr": "İletişime Geçin" },
-    "contactInfoTitle": { "en": "Personal Consultation", "tr": "Kişisel Danışmanlık" },
+    "locationEyebrow": { "en": "Location", "tr": "Konum", "de": "Lage", "ru": "Расположение" },
+    "locationTitle": { "en": "Where?", "tr": "Nerede?", "de": "Wo?", "ru": "Где?" },
+    "contactEyebrow": { "en": "Contact", "tr": "İletişim", "de": "Kontakt", "ru": "Контакты" },
+    "contactTitle": { "en": "Get in Touch", "tr": "İletişime Geçin", "de": "Kontakt aufnehmen", "ru": "Связаться с нами" },
+    "contactInfoTitle": { "en": "Personal Consultation", "tr": "Kişisel Danışmanlık", "de": "Persönliche Beratung", "ru": "Личная консультация" },
     "contactInfoText": {
       "en": "Contact us for detailed information about the project, to schedule a private viewing, or to request a personalised quote.",
-      "tr": "Proje hakkında detaylı bilgi almak, özel bir inceleme planlamak veya size özel teklif talep etmek için bize ulaşın."
+      "tr": "Proje hakkında detaylı bilgi almak, özel bir inceleme planlamak veya size özel teklif talep etmek için bize ulaşın.",
+      "de": "Kontaktieren Sie uns für ausführliche Informationen zum Projekt, zur Vereinbarung einer privaten Besichtigung oder für ein individuelles Angebot.",
+      "ru": "Свяжитесь с нами для получения подробной информации о проекте, чтобы запланировать частный просмотр или запросить индивидуальное предложение."
     },
-    "formName": { "en": "Full Name", "tr": "Ad Soyad" },
-    "formEmail": { "en": "Email", "tr": "E-posta" },
-    "formPhone": { "en": "Phone", "tr": "Telefon" },
-    "formMessage": { "en": "Message", "tr": "Mesaj" },
+    "formName": { "en": "Full Name", "tr": "Ad Soyad", "de": "Vollständiger Name", "ru": "Полное имя" },
+    "formEmail": { "en": "Email", "tr": "E-posta", "de": "E-Mail", "ru": "Эл. почта" },
+    "formPhone": { "en": "Phone", "tr": "Telefon", "de": "Telefon", "ru": "Телефон" },
+    "formMessage": { "en": "Message", "tr": "Mesaj", "de": "Nachricht", "ru": "Сообщение" },
     "formPlaceholder": {
       "en": "I would like to receive more information about this property...",
-      "tr": "Bu mülk hakkında daha fazla bilgi almak istiyorum..."
+      "tr": "Bu mülk hakkında daha fazla bilgi almak istiyorum...",
+      "de": "Ich möchte weitere Informationen zu dieser Immobilie erhalten...",
+      "ru": "Я хотел бы получить больше информации об этой недвижимости..."
     },
-    "formSubmit": { "en": "Send Message", "tr": "Mesaj Gönder" },
+    "formSubmit": { "en": "Send Message", "tr": "Mesaj Gönder", "de": "Nachricht senden", "ru": "Отправить сообщение" },
     "formSuccess": {
       "en": "Thank you. Your message has been sent — we will contact you shortly.",
-      "tr": "Teşekkürler. Mesajınız iletildi — en kısa sürede sizinle iletişime geçeceğiz."
+      "tr": "Teşekkürler. Mesajınız iletildi — en kısa sürede sizinle iletişime geçeceğiz.",
+      "de": "Vielen Dank. Ihre Nachricht wurde gesendet — wir werden uns in Kürze bei Ihnen melden.",
+      "ru": "Спасибо. Ваше сообщение отправлено — мы свяжемся с вами в ближайшее время."
     }
   }
 }

@@ -80,6 +80,19 @@ function renderStructure(data) {
 
   if ($('whatsappBtn')) $('whatsappBtn').href = `https://wa.me/${data.contact.whatsapp}`;
 
+  const calendlyBtn = $('calendlyBtn');
+  if (calendlyBtn && data.contact.calendlyUrl) {
+    calendlyBtn.addEventListener('click', () => {
+      if (window.Calendly) {
+        window.Calendly.initPopupWidget({ url: data.contact.calendlyUrl });
+      } else {
+        window.open(data.contact.calendlyUrl, '_blank', 'noopener');
+      }
+    });
+  } else if (calendlyBtn) {
+    calendlyBtn.style.display = 'none';
+  }
+
   if ($('faqList')) {
     $('faqList').innerHTML = (data.faq || []).map((_, i) => `
       <div class="bg-white border border-gold/25 transition-colors hover:border-gold/50" data-faq="${i}">

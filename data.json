@@ -97,6 +97,7 @@
       "ru": "Здравствуйте, меня интересует проект Bodrum Seaside Residence."
     },
     "email": "info@summerhomes.com",
+    "calendlyUrl": "https://calendly.com/ayhanyilmazdev/private-viewing",
     "office": {
       "en": "Yalıkavak Marina, Bodrum",
       "tr": "Yalıkavak Marina, Bodrum",
@@ -255,6 +256,14 @@
       "ru": "Я хотел бы получить больше информации об этой недвижимости..."
     },
     "formSubmit": { "en": "Send Message", "tr": "Mesaj Gönder", "de": "Nachricht senden", "ru": "Отправить сообщение" },
+    "calendly": {
+      "button": {
+        "en": "Book a Private Viewing",
+        "tr": "Özel Görüntüleme Randevusu",
+        "de": "Private Besichtigung buchen",
+        "ru": "Записаться на частный просмотр"
+      }
+    },
     "formSuccess": {
       "en": "Thank you. Your message has been sent — we will contact you shortly.",
       "tr": "Teşekkürler. Mesajınız iletildi — en kısa sürede sizinle iletişime geçeceğiz.",

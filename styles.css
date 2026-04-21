@@ -295,6 +295,18 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
   transform: translateY(-2px);
 }
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+}
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+#calendlyBtn {
+  display: inline-block;
+  margin-bottom: 28px;
+}
 
 /* SCROLL INDICATOR */
 .scroll-hint {

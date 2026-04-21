@@ -91,6 +91,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="styles.css">
+
+<!-- Calendly (third-party booking widget) -->
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <script>
   tailwind.config = {
     theme: {
@@ -229,6 +233,7 @@
       <div class="contact-info">
         <h3 data-i18n="ui.contactInfoTitle">Personal Consultation</h3>
         <p data-i18n="ui.contactInfoText">Contact us for detailed information about the project, to schedule a private viewing, or to request a personalised quote.</p>
+        <button type="button" class="btn btn-outline" id="calendlyBtn" data-i18n="ui.calendly.button">Book a Private Viewing</button>
         <div class="contact-item">
           <div class="contact-item-icon">☎</div>
           <a id="phoneLink" href="#"></a>

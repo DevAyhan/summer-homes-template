@@ -118,13 +118,99 @@
       "ru": "Информация на этой странице носит презентационный характер. Окончательные характеристики могут отличаться."
     }
   },
+  "faq": [
+    {
+      "q": {
+        "en": "Can foreign nationals purchase property in Turkey?",
+        "tr": "Yabancı uyruklular Türkiye'de mülk satın alabilir mi?",
+        "de": "Können Ausländer Immobilien in der Türkei erwerben?",
+        "ru": "Могут ли иностранцы приобрести недвижимость в Турции?"
+      },
+      "a": {
+        "en": "Yes. Citizens of most countries can purchase real estate in Turkey with full ownership rights. We assist with all legal procedures, title deed transfer, and tax registration.",
+        "tr": "Evet. Pek çok ülke vatandaşı Türkiye'de tam mülkiyet hakkıyla gayrimenkul satın alabilir. Tüm yasal süreçler, tapu devri ve vergi kaydı için destek sağlıyoruz.",
+        "de": "Ja. Bürger der meisten Länder können Immobilien in der Türkei mit vollem Eigentumsrecht erwerben. Wir unterstützen Sie bei allen rechtlichen Verfahren, der Grundbuchübertragung und der Steuerregistrierung.",
+        "ru": "Да. Граждане большинства стран могут приобрести недвижимость в Турции с полным правом собственности. Мы помогаем со всеми юридическими процедурами, передачей права собственности и налоговой регистрацией."
+      }
+    },
+    {
+      "q": {
+        "en": "Is Turkish citizenship available through real estate investment?",
+        "tr": "Gayrimenkul yatırımı ile Türk vatandaşlığı alınabilir mi?",
+        "de": "Ist die türkische Staatsbürgerschaft durch Immobilieninvestitionen möglich?",
+        "ru": "Можно ли получить турецкое гражданство через инвестиции в недвижимость?"
+      },
+      "a": {
+        "en": "Yes. Investing a minimum of USD 400,000 in real estate makes you eligible for Turkish citizenship by investment, granting you and your family a Turkish passport.",
+        "tr": "Evet. En az 400.000 USD değerinde gayrimenkul yatırımı, yatırım yoluyla Türk vatandaşlığına başvuru hakkı kazandırır; siz ve aileniz Türk pasaportu alabilirsiniz.",
+        "de": "Ja. Eine Investition von mindestens 400.000 USD in Immobilien berechtigt zur türkischen Staatsbürgerschaft durch Investition — für Sie und Ihre Familie.",
+        "ru": "Да. Инвестиции в недвижимость на сумму от 400 000 долларов США дают право на получение турецкого гражданства за инвестиции для вас и вашей семьи."
+      }
+    },
+    {
+      "q": {
+        "en": "What are the payment options?",
+        "tr": "Ödeme seçenekleri nelerdir?",
+        "de": "Welche Zahlungsoptionen gibt es?",
+        "ru": "Какие варианты оплаты?"
+      },
+      "a": {
+        "en": "We offer flexible plans: 30% down payment with the remainder distributed over 18–24 months, or full cash payment with a preferential discount. Bank financing is also available.",
+        "tr": "Esnek ödeme planları sunuyoruz: %30 peşinat ve kalanı 18–24 aya yayılan taksitler veya peşin ödemede ayrıcalıklı indirim. Banka finansmanı da mümkündür.",
+        "de": "Wir bieten flexible Pläne: 30 % Anzahlung mit Ratenzahlung über 18–24 Monate, oder Barzahlung mit Vorzugsrabatt. Bankfinanzierung ist ebenfalls möglich.",
+        "ru": "Мы предлагаем гибкие планы: первоначальный взнос 30% с рассрочкой на 18–24 месяца или полная оплата наличными с привилегированной скидкой. Также доступно банковское финансирование."
+      }
+    },
+    {
+      "q": {
+        "en": "When will the project be delivered?",
+        "tr": "Proje ne zaman teslim edilecek?",
+        "de": "Wann wird das Projekt übergeben?",
+        "ru": "Когда будет сдан проект?"
+      },
+      "a": {
+        "en": "Construction is scheduled for completion in Q4 2025. All villas will be delivered fully furnished, with smart home systems and landscaping completed.",
+        "tr": "İnşaatın 2025'in 4. çeyreğinde tamamlanması planlanıyor. Tüm villalar tam mobilyalı, akıllı ev sistemleri kurulu ve peyzaj tamamlanmış olarak teslim edilecektir.",
+        "de": "Die Fertigstellung ist für das 4. Quartal 2025 geplant. Alle Villen werden voll möbliert, mit Smart-Home-Systemen und fertiger Landschaftsgestaltung übergeben.",
+        "ru": "Завершение строительства запланировано на 4-й квартал 2025 года. Все виллы будут сданы полностью меблированными, с системами «умный дом» и завершённым ландшафтом."
+      }
+    },
+    {
+      "q": {
+        "en": "Is property management service provided?",
+        "tr": "Mülk yönetimi hizmeti veriliyor mu?",
+        "de": "Wird ein Immobilien­verwaltungs­service angeboten?",
+        "ru": "Предоставляется ли услуга управления недвижимостью?"
+      },
+      "a": {
+        "en": "Yes. A dedicated management company handles rentals, maintenance, housekeeping, and concierge services — ideal for owners who do not reside permanently on-site.",
+        "tr": "Evet. Özel bir yönetim şirketi kiralama, bakım, temizlik ve konsiyerj hizmetlerini üstlenir — sürekli oturmayan ev sahipleri için idealdir.",
+        "de": "Ja. Eine eigene Verwaltungsgesellschaft kümmert sich um Vermietung, Instandhaltung, Reinigung und Concierge-Service — ideal für Eigentümer, die nicht dauerhaft vor Ort wohnen.",
+        "ru": "Да. Специальная управляющая компания занимается арендой, техническим обслуживанием, уборкой и консьерж-услугами — идеально для владельцев, не проживающих постоянно."
+      }
+    }
+  ],
   "ui": {
     "nav": {
       "project": { "en": "Project", "tr": "Proje", "de": "Projekt", "ru": "Проект" },
       "features": { "en": "Features", "tr": "Özellikler", "de": "Ausstattung", "ru": "Особенности" },
       "gallery": { "en": "Gallery", "tr": "Galeri", "de": "Galerie", "ru": "Галерея" },
       "location": { "en": "Location", "tr": "Konum", "de": "Lage", "ru": "Расположение" },
+      "faq": { "en": "FAQ", "tr": "SSS", "de": "FAQ", "ru": "Вопросы" },
       "contact": { "en": "Contact", "tr": "İletişim", "de": "Kontakt", "ru": "Контакты" }
+    },
+    "faqEyebrow": { "en": "FAQ", "tr": "Sıkça Sorulanlar", "de": "FAQ", "ru": "Вопросы" },
+    "faqTitle": {
+      "en": "Frequently Asked Questions",
+      "tr": "Sıkça Sorulan Sorular",
+      "de": "Häufig gestellte Fragen",
+      "ru": "Часто задаваемые вопросы"
+    },
+    "faqDesc": {
+      "en": "Everything you need to know before making your investment decision.",
+      "tr": "Yatırım kararınızı vermeden önce bilmeniz gereken her şey.",
+      "de": "Alles, was Sie vor Ihrer Investitionsentscheidung wissen müssen.",
+      "ru": "Всё, что нужно знать перед принятием инвестиционного решения."
     },
     "scrollHint": { "en": "Scroll", "tr": "Kaydır", "de": "Scrollen", "ru": "Прокрутить" },
     "aboutEyebrow": { "en": "The Project", "tr": "Proje", "de": "Das Projekt", "ru": "Проект" },

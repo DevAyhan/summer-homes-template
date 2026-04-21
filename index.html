@@ -8,6 +8,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: '#1a2744',
+          'navy-dark': '#111a31',
+          gold: '#c9a84c',
+          'gold-dark': '#a68a35',
+          cream: '#f7f4ed',
+          muted: '#6b6b6b'
+        },
+        fontFamily: {
+          serif: ['"Cormorant Garamond"', 'serif'],
+          sans: ['Inter', 'sans-serif']
+        }
+      }
+    }
+  };
+</script>
 <style>
   :root {
     --navy: #1a2744;
@@ -664,6 +685,7 @@
       <li><a href="#features" data-i18n="ui.nav.features">Features</a></li>
       <li><a href="#gallery" data-i18n="ui.nav.gallery">Gallery</a></li>
       <li><a href="#location" data-i18n="ui.nav.location">Location</a></li>
+      <li><a href="#faq" data-i18n="ui.nav.faq">FAQ</a></li>
       <li><a href="#contact" data-i18n="ui.nav.contact">Contact</a></li>
     </ul>
     <div class="lang-switch" id="langSwitch">
@@ -741,6 +763,18 @@
     <div class="map-wrapper">
       <iframe id="mapFrame" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION (Tailwind) -->
+<section id="faq" class="bg-cream py-20 md:py-28 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12 md:mb-16">
+      <div class="text-gold-dark text-xs tracking-[4px] uppercase font-semibold mb-4" data-i18n="ui.faqEyebrow">FAQ</div>
+      <h2 class="font-serif text-navy text-4xl md:text-5xl mb-5" data-i18n="ui.faqTitle">Frequently Asked Questions</h2>
+      <p class="text-muted max-w-xl mx-auto" data-i18n="ui.faqDesc">Everything you need to know before making your investment decision.</p>
+    </div>
+    <div id="faqList" class="space-y-3"></div>
   </div>
 </section>
 
@@ -888,7 +922,38 @@
 
     document.getElementById('whatsappBtn').href = `https://wa.me/${data.contact.whatsapp}`;
 
+    // FAQ accordion — built with Tailwind utility classes.
+    document.getElementById('faqList').innerHTML = (data.faq || []).map((_, i) => `
+      <div class="bg-white border border-gold/25 transition-colors hover:border-gold/50" data-faq="${i}">
+        <button type="button" class="faq-trigger w-full flex justify-between items-center gap-4 text-left px-5 md:px-6 py-4 md:py-5 text-navy hover:text-gold transition-colors" aria-expanded="false">
+          <span class="font-medium text-base md:text-lg faq-q"></span>
+          <span class="faq-icon text-gold text-2xl leading-none transition-transform duration-300 shrink-0">+</span>
+        </button>
+        <div class="faq-panel grid grid-rows-[0fr] transition-all duration-300 ease-out">
+          <div class="overflow-hidden min-h-0">
+            <p class="px-5 md:px-6 pb-5 text-muted leading-relaxed faq-a"></p>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
     setupGallery();
+    setupFaq();
+  }
+
+  function setupFaq() {
+    document.querySelectorAll('#faqList .faq-trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('[data-faq]');
+        const panel = item.querySelector('.faq-panel');
+        const icon = item.querySelector('.faq-icon');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', (!expanded).toString());
+        panel.classList.toggle('grid-rows-[0fr]', expanded);
+        panel.classList.toggle('grid-rows-[1fr]', !expanded);
+        icon.classList.toggle('rotate-45', !expanded);
+      });
+    });
   }
 
   // Applies localized text to existing elements. Never touches <img> src.
@@ -931,6 +996,13 @@
 
     document.querySelectorAll('#galleryGrid .gallery-item img').forEach((img, i) => {
       img.alt = t(state.gallery[i].alt) || '';
+    });
+
+    document.querySelectorAll('#faqList [data-faq]').forEach(item => {
+      const entry = (data.faq || [])[+item.dataset.faq];
+      if (!entry) return;
+      item.querySelector('.faq-q').textContent = t(entry.q);
+      item.querySelector('.faq-a').textContent = t(entry.a);
     });
 
     const msg = encodeURIComponent(t(data.contact.whatsappMessage) || '');

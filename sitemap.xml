@@ -11,4 +11,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://summer-homes-demo.netlify.app/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://summer-homes-demo.netlify.app/"/>
   </url>
+  <url>
+    <loc>https://summer-homes-demo.netlify.app/about.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://summer-homes-demo.netlify.app/privacy.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

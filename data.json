@@ -197,7 +197,10 @@
       "gallery": { "en": "Gallery", "tr": "Galeri", "de": "Galerie", "ru": "Галерея" },
       "location": { "en": "Location", "tr": "Konum", "de": "Lage", "ru": "Расположение" },
       "faq": { "en": "FAQ", "tr": "SSS", "de": "FAQ", "ru": "Вопросы" },
-      "contact": { "en": "Contact", "tr": "İletişim", "de": "Kontakt", "ru": "Контакты" }
+      "contact": { "en": "Contact", "tr": "İletişim", "de": "Kontakt", "ru": "Контакты" },
+      "home": { "en": "Home", "tr": "Ana Sayfa", "de": "Startseite", "ru": "Главная" },
+      "aboutUs": { "en": "About", "tr": "Hakkımızda", "de": "Über uns", "ru": "О нас" },
+      "privacy": { "en": "Privacy", "tr": "Gizlilik", "de": "Datenschutz", "ru": "Конфиденциальность" }
     },
     "faqEyebrow": { "en": "FAQ", "tr": "Sıkça Sorulanlar", "de": "FAQ", "ru": "Вопросы" },
     "faqTitle": {
@@ -257,6 +260,124 @@
       "tr": "Teşekkürler. Mesajınız iletildi — en kısa sürede sizinle iletişime geçeceğiz.",
       "de": "Vielen Dank. Ihre Nachricht wurde gesendet — wir werden uns in Kürze bei Ihnen melden.",
       "ru": "Спасибо. Ваше сообщение отправлено — мы свяжемся с вами в ближайшее время."
+    },
+    "about": {
+      "eyebrow": { "en": "About Us", "tr": "Hakkımızda", "de": "Über uns", "ru": "О нас" },
+      "title": { "en": "About Summer Homes", "tr": "Summer Homes Hakkında", "de": "Über Summer Homes", "ru": "О Summer Homes" },
+      "p1": {
+        "en": "Summer Homes is a boutique luxury real estate advisory specialising in exceptional sea-view properties across the Turkish Aegean coast, with a primary focus on the Bodrum peninsula.",
+        "tr": "Summer Homes, Bodrum yarımadası başta olmak üzere Ege kıyılarında olağanüstü deniz manzaralı mülkler konusunda uzmanlaşmış butik bir lüks gayrimenkul danışmanlık firmasıdır.",
+        "de": "Summer Homes ist eine Boutique-Immobilienberatung für Luxusobjekte mit Spezialisierung auf außergewöhnliche Immobilien mit Meerblick an der türkischen Ägäisküste — mit Schwerpunkt auf der Halbinsel Bodrum.",
+        "ru": "Summer Homes — это бутиковое консалтинговое агентство по элитной недвижимости, специализирующееся на исключительных объектах с видом на море на турецком побережье Эгейского моря, с основным фокусом на полуострове Бодрум."
+      },
+      "p2": {
+        "en": "For more than a decade, we have guided international buyers through every stage of purchasing property in Turkey — from discreet viewings and price negotiation to title-deed transfer, tax matters, and optional citizenship-by-investment applications.",
+        "tr": "On yılı aşkın süredir, uluslararası alıcılara Türkiye'de mülk satın alma sürecinin her aşamasında — özel görüşmelerden fiyat müzakeresine, tapu devrinden vergi işlemlerine ve isteğe bağlı yatırım yoluyla vatandaşlık başvurularına kadar — rehberlik ediyoruz.",
+        "de": "Seit über einem Jahrzehnt begleiten wir internationale Käufer durch jede Phase des Immobilienkaufs in der Türkei — von diskreten Besichtigungen und Preisverhandlungen über die Grundbuchübertragung bis hin zu Steuerfragen und optionalen Anträgen auf Staatsbürgerschaft durch Investition.",
+        "ru": "Более десяти лет мы сопровождаем международных покупателей на всех этапах приобретения недвижимости в Турции — от конфиденциальных просмотров и переговоров о цене до передачи права собственности, налоговых вопросов и дополнительных заявлений на получение гражданства за инвестиции."
+      },
+      "missionTitle": { "en": "Our Mission", "tr": "Misyonumuz", "de": "Unsere Mission", "ru": "Наша миссия" },
+      "missionText": {
+        "en": "To match discerning buyers with truly exceptional homes — and to make the entire journey transparent, effortless, and enjoyable from first viewing to first summer.",
+        "tr": "Seçkin alıcıları gerçekten ayrıcalıklı evlerle buluşturmak ve tüm süreci ilk görüşmeden ilk yaza kadar şeffaf, zahmetsiz ve keyifli hale getirmek.",
+        "de": "Anspruchsvolle Käufer mit wirklich außergewöhnlichen Häusern zusammenzubringen — und den gesamten Prozess von der ersten Besichtigung bis zum ersten Sommer transparent, mühelos und angenehm zu gestalten.",
+        "ru": "Подбирать взыскательным покупателям по-настоящему исключительные дома и делать весь процесс — от первого показа до первого лета — прозрачным, простым и приятным."
+      },
+      "valuesTitle": { "en": "What We Value", "tr": "Değerlerimiz", "de": "Unsere Werte", "ru": "Наши ценности" },
+      "value1": {
+        "en": "Hand-picked properties — we turn down more listings than we accept.",
+        "tr": "Özenle seçilmiş mülkler — kabul ettiğimizden daha fazla ilanı geri çeviriyoruz.",
+        "de": "Handverlesene Immobilien — wir lehnen mehr Angebote ab, als wir annehmen.",
+        "ru": "Тщательно отобранные объекты — мы отклоняем больше предложений, чем принимаем."
+      },
+      "value2": {
+        "en": "Full transparency on pricing, legal status, and long-term costs.",
+        "tr": "Fiyatlandırma, yasal durum ve uzun vadeli maliyetlerde tam şeffaflık.",
+        "de": "Volle Transparenz bei Preisen, Rechtsstatus und langfristigen Kosten.",
+        "ru": "Полная прозрачность в отношении цен, юридического статуса и долгосрочных расходов."
+      },
+      "value3": {
+        "en": "Multilingual support in English, Turkish, German, and Russian.",
+        "tr": "İngilizce, Türkçe, Almanca ve Rusça dillerinde çok dilli destek.",
+        "de": "Mehrsprachige Unterstützung auf Englisch, Türkisch, Deutsch und Russisch.",
+        "ru": "Многоязычная поддержка на английском, турецком, немецком и русском языках."
+      },
+      "value4": {
+        "en": "Long-term relationships — most of our new buyers come from personal referrals.",
+        "tr": "Uzun vadeli ilişkiler — yeni alıcılarımızın büyük çoğunluğu kişisel tavsiyelerle gelir.",
+        "de": "Langfristige Beziehungen — die meisten unserer neuen Käufer kommen über persönliche Empfehlungen.",
+        "ru": "Долгосрочные отношения — большинство наших новых покупателей приходят по личным рекомендациям."
+      },
+      "contactTitle": { "en": "Get in Touch", "tr": "Bize Ulaşın", "de": "Kontakt aufnehmen", "ru": "Свяжитесь с нами" },
+      "contactText": {
+        "en": "Ready to explore? Visit our contact section on the main page or message us directly on WhatsApp for a same-day response.",
+        "tr": "Keşfetmeye hazır mısınız? Ana sayfadaki iletişim bölümünü ziyaret edin veya aynı gün yanıt için doğrudan WhatsApp üzerinden mesaj gönderin.",
+        "de": "Bereit zu entdecken? Besuchen Sie den Kontaktbereich auf der Startseite oder schreiben Sie uns direkt per WhatsApp — für eine Antwort noch am selben Tag.",
+        "ru": "Готовы к знакомству? Посетите раздел контактов на главной странице или напишите нам напрямую в WhatsApp, чтобы получить ответ в тот же день."
+      }
+    },
+    "privacy": {
+      "eyebrow": { "en": "Legal", "tr": "Yasal", "de": "Rechtliches", "ru": "Юридическая информация" },
+      "title": { "en": "Privacy Policy", "tr": "Gizlilik Politikası", "de": "Datenschutz­erklärung", "ru": "Политика конфиденциальности" },
+      "intro": {
+        "en": "This Privacy Policy explains what information Summer Homes collects through this website, how we use it, and the choices you have. By using this site you agree to the practices described below.",
+        "tr": "Bu Gizlilik Politikası, Summer Homes'un bu web sitesi aracılığıyla hangi bilgileri topladığını, bunları nasıl kullandığımızı ve sahip olduğunuz seçenekleri açıklar. Bu siteyi kullanarak aşağıda açıklanan uygulamaları kabul etmiş sayılırsınız.",
+        "de": "Diese Datenschutzerklärung beschreibt, welche Informationen Summer Homes über diese Website erhebt, wie wir sie verwenden und welche Wahlmöglichkeiten Sie haben. Mit der Nutzung dieser Website erklären Sie sich mit den unten beschriebenen Praktiken einverstanden.",
+        "ru": "В настоящей Политике конфиденциальности описано, какую информацию Summer Homes собирает через этот сайт, как мы её используем и какие возможности у вас есть. Используя этот сайт, вы соглашаетесь с описанными ниже практиками."
+      },
+      "collectTitle": { "en": "Information We Collect", "tr": "Topladığımız Bilgiler", "de": "Welche Daten wir erfassen", "ru": "Какую информацию мы собираем" },
+      "collectText": {
+        "en": "We only collect information that you voluntarily provide through the contact form, together with basic technical data needed to operate and improve the site:",
+        "tr": "Yalnızca iletişim formu aracılığıyla gönüllü olarak sağladığınız bilgileri ve sitenin işletilmesi ve iyileştirilmesi için gerekli temel teknik verileri topluyoruz:",
+        "de": "Wir erfassen nur Informationen, die Sie freiwillig über das Kontaktformular bereitstellen, sowie grundlegende technische Daten, die für den Betrieb und die Verbesserung der Website erforderlich sind:",
+        "ru": "Мы собираем только ту информацию, которую вы добровольно предоставляете через контактную форму, а также базовые технические данные, необходимые для работы и улучшения сайта:"
+      },
+      "collect1": {
+        "en": "Contact details you provide (name, email, phone, message).",
+        "tr": "Sağladığınız iletişim bilgileri (ad, e-posta, telefon, mesaj).",
+        "de": "Von Ihnen angegebene Kontaktdaten (Name, E-Mail, Telefon, Nachricht).",
+        "ru": "Контактные данные, которые вы предоставляете (имя, эл. почта, телефон, сообщение)."
+      },
+      "collect2": {
+        "en": "Anonymous usage statistics collected via Google Analytics (page views, device type, approximate location).",
+        "tr": "Google Analytics ile toplanan anonim kullanım istatistikleri (sayfa görüntülemeleri, cihaz türü, yaklaşık konum).",
+        "de": "Anonyme Nutzungsstatistiken, die über Google Analytics erhoben werden (Seitenaufrufe, Gerätetyp, ungefährer Standort).",
+        "ru": "Анонимная статистика использования, собираемая через Google Analytics (просмотры страниц, тип устройства, приблизительное местоположение)."
+      },
+      "collect3": {
+        "en": "Your selected language preference, stored locally in your browser.",
+        "tr": "Tarayıcınızda yerel olarak saklanan dil tercihiniz.",
+        "de": "Ihre gewählte Spracheinstellung, die lokal in Ihrem Browser gespeichert wird.",
+        "ru": "Ваш выбранный языковой параметр, сохраняемый локально в вашем браузере."
+      },
+      "useTitle": { "en": "How We Use Information", "tr": "Bilgileri Nasıl Kullanırız", "de": "Wie wir Ihre Daten verwenden", "ru": "Как мы используем информацию" },
+      "useText": {
+        "en": "We use the information you submit solely to respond to your enquiry, schedule viewings, and provide the services you request. We do not sell or rent your personal data to third parties.",
+        "tr": "Gönderdiğiniz bilgileri yalnızca talebinize yanıt vermek, görüşmeleri planlamak ve talep ettiğiniz hizmetleri sunmak için kullanırız. Kişisel verilerinizi üçüncü taraflara satmaz veya kiralamayız.",
+        "de": "Wir verwenden die von Ihnen übermittelten Informationen ausschließlich, um auf Ihre Anfrage zu antworten, Besichtigungen zu planen und die von Ihnen angeforderten Leistungen zu erbringen. Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht an Dritte.",
+        "ru": "Мы используем предоставленную вами информацию исключительно для ответа на ваш запрос, планирования просмотров и оказания запрошенных услуг. Мы не продаём и не сдаём в аренду ваши персональные данные третьим лицам."
+      },
+      "analyticsTitle": { "en": "Analytics & Cookies", "tr": "Analitik ve Çerezler", "de": "Analyse & Cookies", "ru": "Аналитика и файлы cookie" },
+      "analyticsText": {
+        "en": "This site uses Google Analytics to understand how visitors interact with our pages. Analytics cookies are anonymous and do not identify you personally. You can disable them through your browser settings.",
+        "tr": "Bu site, ziyaretçilerin sayfalarımızla nasıl etkileşime girdiğini anlamak için Google Analytics kullanır. Analitik çerezleri anonimdir ve sizi kişisel olarak tanımlamaz. Tarayıcı ayarlarınızdan bunları devre dışı bırakabilirsiniz.",
+        "de": "Diese Website verwendet Google Analytics, um zu verstehen, wie Besucher mit unseren Seiten interagieren. Analyse-Cookies sind anonym und identifizieren Sie nicht persönlich. Sie können sie über Ihre Browsereinstellungen deaktivieren.",
+        "ru": "Этот сайт использует Google Analytics для понимания того, как посетители взаимодействуют с нашими страницами. Аналитические файлы cookie анонимны и не идентифицируют вас лично. Вы можете отключить их в настройках браузера."
+      },
+      "rightsTitle": { "en": "Your Rights", "tr": "Haklarınız", "de": "Ihre Rechte", "ru": "Ваши права" },
+      "rightsText": {
+        "en": "You may request a copy of the personal data we hold about you, ask for corrections, or request deletion at any time. We will respond within 30 days.",
+        "tr": "Hakkınızda tuttuğumuz kişisel verilerin bir kopyasını talep edebilir, düzeltme isteyebilir veya istediğiniz zaman silinmesini talep edebilirsiniz. 30 gün içinde yanıt veririz.",
+        "de": "Sie können jederzeit eine Kopie der über Sie gespeicherten personenbezogenen Daten anfordern, Berichtigungen verlangen oder deren Löschung beantragen. Wir antworten innerhalb von 30 Tagen.",
+        "ru": "Вы можете в любое время запросить копию хранимых нами персональных данных, потребовать их исправления или удаления. Мы ответим в течение 30 дней."
+      },
+      "contactTitle": { "en": "Contact", "tr": "İletişim", "de": "Kontakt", "ru": "Контакт" },
+      "contactText": {
+        "en": "For privacy-related questions, write to info@summerhomes.com with the subject line \"Privacy Request\".",
+        "tr": "Gizlilikle ilgili sorular için info@summerhomes.com adresine \"Gizlilik Talebi\" konulu bir e-posta gönderin.",
+        "de": "Bei Fragen zum Datenschutz schreiben Sie bitte an info@summerhomes.com mit dem Betreff „Datenschutzanfrage\".",
+        "ru": "По вопросам, связанным с конфиденциальностью, пишите на info@summerhomes.com с темой «Запрос о конфиденциальности»."
+      }
     }
   }
 }

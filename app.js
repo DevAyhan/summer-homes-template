@@ -302,6 +302,34 @@ window.addEventListener('scroll', () => {
   if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
 });
 
+(function setupNavToggle() {
+  const nav = $('navbar');
+  const toggle = $('navToggle');
+  if (!nav || !toggle) return;
+
+  const setOpen = (open) => {
+    nav.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    setOpen(!nav.classList.contains('nav-open'));
+  });
+
+  nav.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => setOpen(false));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('nav-open') && !nav.contains(e.target)) setOpen(false);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setOpen(false);
+  });
+})();
+
 if ($('year')) $('year').textContent = new Date().getFullYear();
 
 const contactForm = document.querySelector('.contact-form');

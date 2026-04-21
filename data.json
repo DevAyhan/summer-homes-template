@@ -316,6 +316,16 @@
         "ru": "Готовы к знакомству? Посетите раздел контактов на главной странице или напишите нам напрямую в WhatsApp, чтобы получить ответ в тот же день."
       }
     },
+    "notFound": {
+      "title": { "en": "Page Not Found", "tr": "Sayfa Bulunamadı", "de": "Seite nicht gefunden", "ru": "Страница не найдена" },
+      "text": {
+        "en": "The page you are looking for does not exist or has been moved.",
+        "tr": "Aradığınız sayfa mevcut değil veya taşınmış.",
+        "de": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+        "ru": "Запрашиваемая страница не существует или была перемещена."
+      },
+      "cta": { "en": "Back to Home", "tr": "Ana Sayfaya Dön", "de": "Zur Startseite", "ru": "На главную" }
+    },
     "privacy": {
       "eyebrow": { "en": "Legal", "tr": "Yasal", "de": "Rechtliches", "ru": "Юридическая информация" },
       "title": { "en": "Privacy Policy", "tr": "Gizlilik Politikası", "de": "Datenschutz­erklärung", "ru": "Политика конфиденциальности" },

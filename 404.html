@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<meta name="page-title-key" content="ui.notFound.title">
+<title>404 — Summer Homes</title>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231a2744'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' fill='%23c9a84c' font-family='Georgia,serif' font-size='38' font-weight='600'%3ES%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<style>
+  .notfound {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--navy), var(--navy-dark));
+    color: var(--white);
+    padding: 40px 24px;
+  }
+  .notfound-inner { max-width: 520px; }
+  .notfound .code {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(5rem, 14vw, 9rem);
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .notfound h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 18px;
+    color: var(--white);
+  }
+  .notfound p {
+    opacity: 0.75;
+    margin-bottom: 36px;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<section class="notfound">
+  <div class="notfound-inner">
+    <div class="code">404</div>
+    <h1 data-i18n="ui.notFound.title">Page Not Found</h1>
+    <p data-i18n="ui.notFound.text">The page you are looking for does not exist or has been moved.</p>
+    <a href="/" class="btn" data-i18n="ui.notFound.cta">Back to Home</a>
+  </div>
+</section>
+
+<script src="/app.js"></script>
+</body>
+</html>

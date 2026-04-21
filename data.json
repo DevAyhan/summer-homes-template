@@ -1,0 +1,142 @@
+{
+  "brand": {
+    "name": "Summer Homes",
+    "logo": "SUMMER HOMES",
+    "tagline": {
+      "en": "A New Address for Luxury Living",
+      "tr": "Lüks Yaşamın Yeni Adresi"
+    }
+  },
+  "project": {
+    "name": {
+      "en": "Bodrum Seaside Residence",
+      "tr": "Bodrum Sahil Rezidansı"
+    },
+    "subtitle": {
+      "en": "Exclusive Sea View Villas",
+      "tr": "Özel Deniz Manzaralı Villalar"
+    },
+    "location": {
+      "en": "Yalıkavak, Bodrum",
+      "tr": "Yalıkavak, Bodrum"
+    },
+    "price": "€ 1.250.000",
+    "priceSuffix": {
+      "en": "starting from",
+      "tr": "başlangıç fiyatı"
+    },
+    "description": {
+      "en": "An exceptional living experience where modern architecture meets the Mediterranean spirit, nestled in the heart of the Aegean. Hand-picked for discerning international buyers seeking a true sanctuary by the sea.",
+      "tr": "Ege'nin kalbinde, modern mimarinin Akdeniz ruhuyla buluştuğu eşsiz bir yaşam deneyimi. Deniz kenarında gerçek bir sığınak arayan seçkin uluslararası alıcılar için özenle seçilmiştir."
+    },
+    "heroImage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811",
+    "cta": {
+      "text": {
+        "en": "Request Information",
+        "tr": "Bilgi Al"
+      },
+      "link": "#contact"
+    }
+  },
+  "features": [
+    { "icon": "📐", "label": { "en": "Living Area", "tr": "Yaşam Alanı" }, "value": { "en": "320 m²", "tr": "320 m²" } },
+    { "icon": "🛏️", "label": { "en": "Bedrooms", "tr": "Yatak Odası" }, "value": { "en": "4 + 1", "tr": "4 + 1" } },
+    { "icon": "🛁", "label": { "en": "Bathrooms", "tr": "Banyo" }, "value": { "en": "3", "tr": "3" } },
+    { "icon": "🏊", "label": { "en": "Private Pool", "tr": "Özel Havuz" }, "value": { "en": "Yes", "tr": "Var" } },
+    { "icon": "🌊", "label": { "en": "Sea View", "tr": "Deniz Manzarası" }, "value": { "en": "Full Front", "tr": "Cepheden" } },
+    { "icon": "📍", "label": { "en": "Location", "tr": "Konum" }, "value": { "en": "Yalıkavak", "tr": "Yalıkavak" } }
+  ],
+  "highlights": [
+    { "en": "Smart home automation", "tr": "Akıllı ev otomasyonu" },
+    { "en": "24/7 private security", "tr": "7/24 özel güvenlik" },
+    { "en": "Direct beach access", "tr": "Plaja doğrudan erişim" },
+    { "en": "Spa & wellness center", "tr": "Spa ve wellness merkezi" },
+    { "en": "Concierge service", "tr": "Konsiyerj hizmeti" },
+    { "en": "Private jetty", "tr": "Özel iskele" }
+  ],
+  "gallery": [
+    { "src": "images/photo1.jpg", "alt": { "en": "Exterior view", "tr": "Dış görünüm" } },
+    { "src": "images/photo2.jpg", "alt": { "en": "Living room", "tr": "Oturma odası" } },
+    { "src": "https://images.unsplash.com/photo-1613977257363-707ba9348227", "alt": { "en": "Master bedroom", "tr": "Ebeveyn yatak odası" } },
+    { "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3", "alt": { "en": "Infinity pool", "tr": "Sonsuzluk havuzu" } },
+    { "src": "https://images.unsplash.com/photo-1600489000022-c2086d79f9d4", "alt": { "en": "Kitchen", "tr": "Mutfak" } },
+    { "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c", "alt": { "en": "Terrace sea view", "tr": "Teras deniz manzarası" } }
+  ],
+  "location": {
+    "address": {
+      "en": "Yalıkavak Marina, Bodrum, Muğla, Türkiye",
+      "tr": "Yalıkavak Marina, Bodrum, Muğla, Türkiye"
+    },
+    "lat": 37.096061,
+    "lng": 27.268855,
+    "zoom": 16
+  },
+  "contact": {
+    "phone": "+90 555 123 45 67",
+    "whatsapp": "905551234567",
+    "whatsappMessage": {
+      "en": "Hello, I'm interested in the Bodrum Seaside Residence project.",
+      "tr": "Merhaba, Bodrum Sahil Rezidansı projesi ile ilgileniyorum."
+    },
+    "email": "info@summerhomes.com",
+    "office": {
+      "en": "Yalıkavak Marina, Bodrum",
+      "tr": "Yalıkavak Marina, Bodrum"
+    }
+  },
+  "footer": {
+    "copyright": {
+      "en": "Summer Homes. All rights reserved.",
+      "tr": "Summer Homes. Tüm hakları saklıdır."
+    },
+    "disclaimer": {
+      "en": "The information on this page is for presentation purposes. Final specifications may vary.",
+      "tr": "Bu sayfadaki bilgiler tanıtım amaçlıdır. Nihai özellikler değişiklik gösterebilir."
+    }
+  },
+  "ui": {
+    "nav": {
+      "project": { "en": "Project", "tr": "Proje" },
+      "features": { "en": "Features", "tr": "Özellikler" },
+      "gallery": { "en": "Gallery", "tr": "Galeri" },
+      "location": { "en": "Location", "tr": "Konum" },
+      "contact": { "en": "Contact", "tr": "İletişim" }
+    },
+    "scrollHint": { "en": "Scroll", "tr": "Kaydır" },
+    "aboutEyebrow": { "en": "The Project", "tr": "Proje" },
+    "featuresEyebrow": { "en": "Features", "tr": "Özellikler" },
+    "featuresTitle": { "en": "Exceptional Living", "tr": "Ayrıcalıklı Yaşam" },
+    "featuresDesc": {
+      "en": "Every detail thoughtfully considered, a living space of uncompromising quality.",
+      "tr": "Her detay özenle düşünülmüş, tavizsiz kalitede bir yaşam alanı."
+    },
+    "galleryEyebrow": { "en": "Gallery", "tr": "Galeri" },
+    "galleryTitle": { "en": "Visuals", "tr": "Görseller" },
+    "galleryDesc": {
+      "en": "Discover the unique atmosphere of the project.",
+      "tr": "Projenin eşsiz atmosferini keşfedin."
+    },
+    "locationEyebrow": { "en": "Location", "tr": "Konum" },
+    "locationTitle": { "en": "Where?", "tr": "Nerede?" },
+    "contactEyebrow": { "en": "Contact", "tr": "İletişim" },
+    "contactTitle": { "en": "Get in Touch", "tr": "İletişime Geçin" },
+    "contactInfoTitle": { "en": "Personal Consultation", "tr": "Kişisel Danışmanlık" },
+    "contactInfoText": {
+      "en": "Contact us for detailed information about the project, to schedule a private viewing, or to request a personalised quote.",
+      "tr": "Proje hakkında detaylı bilgi almak, özel bir inceleme planlamak veya size özel teklif talep etmek için bize ulaşın."
+    },
+    "formName": { "en": "Full Name", "tr": "Ad Soyad" },
+    "formEmail": { "en": "Email", "tr": "E-posta" },
+    "formPhone": { "en": "Phone", "tr": "Telefon" },
+    "formMessage": { "en": "Message", "tr": "Mesaj" },
+    "formPlaceholder": {
+      "en": "I would like to receive more information about this property...",
+      "tr": "Bu mülk hakkında daha fazla bilgi almak istiyorum..."
+    },
+    "formSubmit": { "en": "Send Message", "tr": "Mesaj Gönder" },
+    "formSuccess": {
+      "en": "Thank you. Your message has been sent — we will contact you shortly.",
+      "tr": "Teşekkürler. Mesajınız iletildi — en kısa sürede sizinle iletişime geçeceğiz."
+    }
+  }
+}
